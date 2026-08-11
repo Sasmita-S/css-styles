@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background-color:#f8f1e5;   /* Cream */
+}
+
+.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:#6f4e37;   /* Dark Brown */
+    color:white;
+    text-align:center;
+    z-index:10;
+}
+
+.header{
+    margin-top:60px;
+    background-color:#d2b48c;   /* Tan */
+    text-align:center;
+    padding:70px;
+    color:#4a2c2a;
+}
+
+.sticky{
+    position:sticky;
+    top:60px;
+    width:100%;
+    background-color:#c19a6b;   /* Light Brown */
+    padding:20px 0;
+    text-align:center;
+    z-index:5;
+}
+
+.sticky h3{
+    display:inline;
+    margin-right:50px;
+}
+
+.sticky a{
+    color:#3e2723;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+.parent{
+    width:900px;
+    margin:40px auto;
+    background-color:#fff8ee;   /* Soft Cream */
+    padding:40px;
+    border-radius:10px;
+}
+
+.relative{
+    position:relative;
+    height:200px;
+    background-color:#e6d3b3;   /* Cream Shade */
+    padding:20px;
+    margin-top:30px;
+}
+
+.absolute{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background-color:#8b5e3c;   /* Rich Brown */
+    color:white;
+    padding:10px;
+    border-radius:5px;
+}
+
+.parent p{
+    line-height:2;
+    color:#5d4037;
+}
