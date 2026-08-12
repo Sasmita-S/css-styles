@@ -1,0 +1,13 @@
+.container{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+padding:20px;
+}
+
+.box{
+height:100px;
+background-color:rgb(86, 234, 194);
+text-align:center;
+padding-top:30px;
+}
