@@ -1,0 +1,40 @@
+.parent{
+width:1000px;
+height:1000px;
+background-color:rgb(12,15,15);
+}
+
+.block{
+height:250px;
+width:250px;
+background-color:rgb(237, 152, 55);
+padding:10px;
+border:10px solid rgb(253, 248, 187);
+margin:30px;
+display:block;
+}
+
+.inline1{
+display:inline;
+background-color:rgb(237, 152, 55);
+margin:20px;
+border:2px solid rgb(253, 248, 187);
+padding:10px;
+}
+
+.inline2{
+display:inline;
+background-color:rgb(237, 152, 55);
+border:2px solid rgb(253, 248, 187);
+padding:10px;
+}
+
+.inline-block{
+width:195px;
+height:195px;
+display:inline-block;
+background-color:rgb(249, 249, 249);
+margin:30px;
+border:9px solid rgb(244, 106, 20);
+padding:10px;
+}
