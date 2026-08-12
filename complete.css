@@ -1,0 +1,193 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8f6f1;
+    color:#333;
+}
+
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#5c4033;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.navbar ul{
+    list-style:none;
+}
+
+.navbar li{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.hero{
+    position:relative;
+    margin-top:70px;
+    height:90vh;
+    background:linear-gradient(135deg,#d9c2a3,#8b6f47);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:#5c4033;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+
+.floating-card{
+    position:absolute;
+    right:50px;
+    bottom:50px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.services{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:40px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+
+.card{
+    background:white;
+    padding:30px;
+    border:4px solid #8b6f47;
+    margin:10px;
+    border-radius:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+.stats{
+    background:#5c4033;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:50px;
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.team{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.team-flex{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.member{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.member img{
+    width:100%;
+    border-radius:50%;
+}
+
+
+.sticky-banner{
+    position:sticky;
+    bottom:0;
+    background:#8b6f47;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-weight:bold;
+}
+
+footer{
+    background:#3b2a20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+
+.card:hover,
+.member:hover{
+    transform:translateY(-10px);
+    transition:0.4s;
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .floating-card{
+        position:static;
+        margin-top:20px;
+    }
+}
